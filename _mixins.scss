@@ -1,0 +1,27 @@
+@mixin cube{
+
+
+    border: 1px solid $border-color;
+    width:$cube-width;
+    color: $primary-color;
+    padding: $padding;
+
+}
+
+@mixin container{
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 800px;
+    
+}
+
+@mixin fa-solid{
+    color: white;
+    
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

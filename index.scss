@@ -1,0 +1,69 @@
+@import '_variables';
+@import '_mixins';
+
+.container{
+    
+    @include container;
+
+
+     .cube{
+        @include cube;
+
+        .img{
+            
+            width: $img-width;
+            height: $img-height;
+        
+            border-radius:$border-radius;
+            
+
+
+
+        }
+        
+
+        .grey{
+            color:$p-color  ;
+        }
+
+        h3{
+           text-align: center;
+           display: inline-block;
+           color: $primary-color;
+        }
+
+        .first{
+            background-color: $orange-bg;
+            
+          
+
+        }
+
+        .second{
+            background-color: $lightgreen-bg;
+        }
+
+        .third{
+            background-color: $lightblue-bg;
+            
+        }
+
+        .four{
+            background-color: $violet-bg;
+        }
+        
+        .five{
+            background-color: $lightred-bg;
+            
+        }
+        
+        .fa-solid{
+            @include fa-solid;
+            font-size: $fa-size;
+
+        }
+        
+   
+
+    }
+}
